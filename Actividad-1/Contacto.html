@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+
+<body bgcolor="gray">
+<main>
+    <div id="contenedor">
+    <a name="arriba"></a>
+    <a href="#arriba"><img id="flecha" src="./img/flecha.png"></a>
+    <header align="center">
+        <a href="Home.html"><img src="./img/logo.JPG"></a>
+    </header>
+
+    <nav>
+        <ul class="menu"> 
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="AreaDeActuacion.html">Area de actuacion</a>
+                <ul>
+                    <li><a href="Cuerdas.html">Instrumentos de cuerda</a></li>
+                    <li><a href="Teclas.html">Instrumentos de teclas</a></li>
+                    <li><a href="Percusion.html">Instrumentos de percusion</a></li>
+                    <li><a href="Viento.html">Instrumentos de viento</a></li>
+                </ul>
+            </li>
+            <li><a href="QuienesSomos.html">Quienes Somos</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="clear"></div>
+
+    <div id="contenido">
+    <div id="margen">
+        <h1>Formulario de contacto</h1>
+        <form action="ProcesarPeticion.jsp"  method="get">
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" autofocus/>
+        
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos"/>
+        
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="email" required />
+
+            <label for="edad">Edad:</label>
+            <input type="date" name="Edad"/>
+
+            <br><br>
+            <label for="instrumentos">Nº Instrumentos:</label> 
+            <input type="number" min="0"  name="instrumentos" placeholder="instrumentos" required/>
+
+            <label for="telefono">Telefono:</label>
+            <input type="tel" name="telefono" placeholder="Escribe su número de telefono"/>
+
+            <label for="url">Tu pagina de musica:</label>
+            <input type="url" name="url" placeholder="Escribe su url"/>
+            <br>
+            <br>
+            <label for="intereses">Interesado en: </label>
+            <br />	
+            <input type="checkbox" name="intereses" value="C" checked/>Cuerdas<br />	
+            <input type="checkbox" name="intereses" value="T" />Teclas<br />	
+            <input type="checkbox" name="intereses" value="P" />Percusion<br />	
+            <input type="checkbox" name="intereses" value="V" />Viento<br />	
+            <br>
+
+            <label for="color">Color del instrumento:</label>
+            <input type="color" name="color"/>
+            <br><br>
+            <label for="terminos">¿Acepta los terminos de uso? </label>
+            <br/>	
+            He leido y acepto los terminos de uso <input type="checkbox" name="terminos" value="Y" />
+            <br><br>
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" for="mensaje" placeholder="Cuentanos cualquier cosa con un maximo de 300 caracteres" maxlength="300"></textarea>
+            
+            <input type="submit" name="enviar" value="enviar datos"/>
+        </form>
+        
+    </div>
+    </div>
+    <div class="clear"></div>
+
+    <footer>
+        <a href="Donde.html"><p>Donde Estamos</p></a>
+        <a href="AvisoLegal.html"><p>Aviso Legal</p></a>
+    </footer>    
+    </div> 
+</main>
+</body>
+</html>
